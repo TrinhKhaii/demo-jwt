@@ -1,0 +1,12 @@
+<form class="col-3 p-5" style="background-color: #ffffff; border-radius: 20px" [formGroup]="resetPasswordForm" (ngSubmit)="submit()">
+  <div class="form-group ">
+    <label for="exampleInputEmail1">Mật khẩu mới</label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="newPassword">
+  </div>
+  <div class="form-group ">
+    <label for="exampleInputEmail2">Nhập lại mật khẩu</label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail2" aria-describedby="emailHelp" formControlName="comfirmNewPassword">
+  </div>
+  <!-- Submit button -->
+  <input type="submit" class="btn btn-outline-danger btn-block mb-4 btn-lg" value="Xác nhận">
+</form>
